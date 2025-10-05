@@ -1,0 +1,146 @@
+@font-face {
+  font-family: "ara";
+  src: url(assets/font/AraAlmBon.otf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "ara";
+  height: 100vh;
+
+  background-image: url(assets/img/back.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 14rem;
+}
+.video {
+  width: 150vw;
+  position: fixed;
+  z-index: -9;
+}
+
+header {
+  background-image: url(assets/img);
+}
+header .container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 15rem;
+  background-image: url(assets/img/download.jfif);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+header .container img {
+  width: 10rem;
+  border-radius: 50%;
+  transform: translateY(100%);
+  z-index: 2;
+}
+
+header .text {
+  background-color: #000000ac;
+  text-align: center;
+  margin-top: 90px;
+  border: #d10000 1px solid;
+  box-shadow: 0 0 10px 0 #ff0000;
+}
+header .text p {
+  font-size: 2rem;
+  color: #d10000;
+  text-shadow: 0 10px 5px rgb(28, 2, 2);
+}
+header .text p small {
+  color: #d10000;
+  text-shadow: 0 10px 10px grey;
+  font-size: 1rem;
+}
+
+header nav {
+  margin: 1rem 0;
+}
+header nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+header nav ul li {
+  list-style: none;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: gold;
+  font-size: 1.4rem;
+  transition: 0.3s ease-in;
+}
+header nav ul li a:hover {
+  color: #d10000;
+  font-size: 1.45rem;
+}
+
+main {
+    padding: 1rem;
+}
+main .container {
+    margin-bottom: 1.5rem;
+}
+main .container ul {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+main .container ul li {
+    width: 120px;
+    padding: 3rem;
+    text-align: center;
+    list-style: none;
+    border-radius: 10px;
+    background-image: url(assets/img/text.jfif);
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: .3s ease-in-out;
+}
+main .container ul li a {
+    text-decoration: none;
+    color: #d10000;
+    font-size: 1.3rem;
+    transition: .3s ease-in-out;
+}
+main .container ul li a:hover{
+    color: gold;
+}
+main .container ul li:hover{
+    box-shadow: 0 0 30px 1px #d10000;
+}
+
+nav:before{
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #3000007a;
+    z-index: -2;
+    top: 10Px;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: .2rem;
+    background-color: #8b0303;
+}
+
+/* ** ======================== Media ================================** */
+
+@media (min-width: 750px) {
+  .video {
+    display: none;
+  }
+}
